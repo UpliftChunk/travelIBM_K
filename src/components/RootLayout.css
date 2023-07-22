@@ -1,0 +1,76 @@
+#TravelPage{
+   background-color: black;
+}
+#NavList{
+   background-color: rgba(240, 248, 255, 0.65);
+   border-radius: 40px;
+   padding: 0 20px;
+}
+.navIcon{
+   border-radius: 50%;
+   height: 40px;
+ }
+#beaches, #hills, #deserts, #lakefront, #farms{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 2px;
+}
+.DestiCard{
+   background-color: #62a29efa;
+   padding: 10px;
+   margin: 10px;
+   border-radius: 40px;
+   height: 212px;
+   width: 330px;
+}
+
+.DestiCard img{
+   border: 1px solid black;
+   border-radius: 40px;
+   object-fit: cover;
+   height: 100%;
+   width: 100%;
+   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width:1230px) and (min-width:700px) {
+   .active{
+   height: 400px !important;
+   width: 650px !important;
+   margin: 0 140px;
+   order: 1;
+   }
+   .DestiCard{
+      height: 150px;
+      width: 230px;
+   }
+}
+
+@media screen and (max-width:699px) and (min-width:600px) {
+   .active{
+   height: 300px !important;
+   width: 500px !important;
+   margin: 0 100px;
+   order: 1;
+   }
+   .DestiCard{
+      height: 100px;
+      width: 180px;
+      padding: 5px;
+   }
+}
+
+@media screen and (max-width:599px) and (min-width:300px) {
+   .active{
+   height: 300px !important;
+   width: 500px !important;
+   margin: 0 20px;
+   order: 1;
+   }
+   .DestiCard{
+      height: 60px;
+      width: 120px;
+      padding: 5px;
+   }
+}
